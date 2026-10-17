@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A practical SEO audit checklist covering technical SEO, crawlability, on-page SEO, content, performance, and monitoring.">
+  <meta name="theme-color" content="#174ea6">
+  <title>SEO Audit Checklist | WEB HOST PUNE</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#top"><span class="brand-mark">W</span><span>SEO Audit <strong>Checklist</strong></span></a>
+      <a class="top-link" href="https://www.webhostpune.com/" target="_blank" rel="noopener noreferrer">WEB HOST PUNE ↗</a>
+    </div>
+  </header>
+
+  <main id="top" class="container">
+    <section class="hero">
+      <p class="eyebrow">Practical website review</p>
+      <h1>Make your next SEO audit more organized.</h1>
+      <p class="intro">Use this checklist to review common technical, on-page, content, and monitoring issues. Tick off completed checks, track progress, and print the checklist when you need a working copy.</p>
+      <div class="actions">
+        <button class="button primary" id="print-button" type="button">Print / Save as PDF</button>
+        <button class="button secondary" id="reset-button" type="button">Reset checklist</button>
+        <a class="button secondary" href="data/seo-audit-checklist.csv" download>Download CSV</a>
+      </div>
+      <div class="progress-panel" aria-live="polite">
+        <div class="progress-label"><span id="progress-text">0 of 30 checks complete</span><strong id="progress-percent">0%</strong></div>
+        <div class="progress-track"><div id="progress-bar" class="progress-bar"></div></div>
+        <p class="note">Progress is saved only in this browser on this device. It is not uploaded to a server.</p>
+      </div>
+    </section>
+
+    <section class="notice">
+      <strong>Keep in mind:</strong> This checklist helps organize an audit; it does not guarantee rankings or indexing. Verify each finding against your site and the tools available to you.
+    </section>
+
+    <div id="checklist" class="checklist">
+      <section class="audit-section" data-category="Crawlability and indexability">
+        <div class="section-head"><span class="section-number">01</span><div><h2>Crawlability &amp; indexability</h2><p>Confirm important pages can be discovered and are not unintentionally blocked.</p></div></div>
+        <label class="check-item"><input type="checkbox"><span><strong>Review robots.txt</strong><small>Check that important pages and assets are not unintentionally disallowed.</small></span></label>
+        <label class="check-item"><input type="checkbox"><span><strong>Review XML sitemap</strong><small>Confirm canonical, indexable URLs are included and the sitemap is accessible.</small></span></label>
+        <label class="check-item"><input type="checkbox"><span><strong>Check noindex directives</strong><small>Look for unintended meta robots or X-Robots-Tag noindex directives.</small></span></label>
+        <label class="check-item"><input type="checkbox"><span><strong>Inspect HTTP status codes</strong><small>Important pages should return the expected status; investigate errors and redirect chains.</small></span></label>
+        <label class="check-item"><input type="checkbox"><span><strong>Review search engine indexing reports</strong><small>Use available search engine tools to investigate exclusions and indexing issues.</small></span></label>
+      </section>
+
+      <section class="audit-section" data-category="Technical SEO">
+        <div class="section-head"><span class="section-number">02</span><div><h2>Technical SEO</h2><p>Check URL consistency, security, redirects, and site structure.</p></div></div>
+        <label class="check-item"><input type="checkbox"><span><strong>Choose a preferred hostname and protocol</strong><small>Redirect alternate HTTP/HTTPS and www/non-www versions consistently.</small></span></label>
+        <label class="check-item"><input type="checkbox"><span><strong>Review canonical tags</strong><small>Ensure canonical URLs point to the intended preferred pages.</small></span></label>
+        <label class="check-item"><input type="checkbox"><span><strong>Find broken internal links</strong><small>Fix links that lead to missing pages or incorrect destinations.</small></span></label>
+        <label class="check-item"><input type="checkbox"><span><strong>Check redirect chains and loops</strong><small>Prefer direct redirects and resolve loops or irrelevant redirect targets.</small></span></label>
+      </section>
+
+      <section class="audit-section" data-category="On-page SEO">
+        <div class="section-head"><span class="section-number">03</span><div><h2>On-page SEO</h2><p>Make each important page understandable to users and search engines.</p></div></div>
+        <label class="check-item"><input type="checkbox"><span><strong>Write a unique title for each important page</strong><small>Keep titles descriptive, relevant, and specific to the page.</small></span></label>
+        <label class="check-item"><input type="checkbox"><span><strong>Review meta descriptions</strong><small>Write useful summaries for key pages; search engines may choose different snippets.</small></span></label>
+        <label class="check-item"><input type="checkbox"><span><strong>Use a clear heading hierarchy</strong><small>Organize content with descriptive headings in a logical order.</small></span></label>
+        <label class="check-item"><input type="checkbox"><span><strong>Optimize image alt text</strong><small>Describe meaningful images accurately; use empty alt text for decorative images.</small></span></label>
+        <label class="check-item"><input type="checkbox"><span><strong>Review URL readability</strong><small>Use stable, descriptive URLs and avoid unnecessary parameters where practical.</small></span></label>
+      </section>
+
+      <section class="audit-section" data-category="Content quality">
+        <div class="section-head"><span class="section-number">04</span><div><h2>Content quality</h2><p>Make sure pages satisfy the audience's actual needs.</p></div></div>
+        <label class="check-item"><input type="checkbox"><span><strong>Match content to search intent</strong><small>Check whether the page answers the questions users are likely to have.</small></span></label>
+        <label class="check-item"><input type="checkbox"><span><strong>Update outdated or inaccurate information</strong><small>Verify facts, dates, examples, pricing, and references.</small></span></label>
+        <label class="check-item"><input type="checkbox"><span><strong>Review duplicate or overlapping pages</strong><small>Decide whether pages should be improved, consolidated, redirected, or kept separate.</small></span></label>
+        <label class="check-item"><input type="checkbox"><span><strong>Add useful evidence and experience</strong><small>Include original examples, clear authorship, and trustworthy references where relevant.</small></span></label>
+      </section>
+
+      <section class="audit-section" data-category="Internal linking">
+        <div class="section-head"><span class="section-number">05</span><div><h2>Internal linking</h2><p>Help visitors and crawlers navigate related pages.</p></div></div>
+        <label class="check-item"><input type="checkbox"><span><strong>Link to important pages contextually</strong><small>Add useful internal links from relevant pages and resources.</small></span></label>
+        <label class="check-item"><input type="checkbox"><span><strong>Review anchor text</strong><small>Use concise, descriptive anchors that accurately describe the destination.</small></span></label>
+        <label class="check-item"><input type="checkbox"><span><strong>Find orphan pages</strong><small>Identify important pages with no meaningful internal links pointing to them.</small></span></label>
+      </section>
+
+      <section class="audit-section" data-category="Performance and mobile">
+        <div class="section-head"><span class="section-number">06</span><div><h2>Performance &amp; mobile usability</h2><p>Check practical usability across devices and connection speeds.</p></div></div>
+        <label class="check-item"><input type="checkbox"><span><strong>Test mobile layouts</strong><small>Check navigation, forms, text, buttons, and horizontal overflow on small screens.</small></span></label>
+        <label class="check-item"><input type="checkbox"><span><strong>Review Core Web Vitals and page speed</strong><small>Use field data where available and lab diagnostics to identify improvement opportunities.</small></span></label>
+        <label class="check-item"><input type="checkbox"><span><strong>Optimize large images and assets</strong><small>Resize images appropriately and reduce unnecessary scripts, fonts, and CSS.</small></span></label>
+        <label class="check-item"><input type="checkbox"><span><strong>Check HTTPS and user-facing errors</strong><small>Verify secure loading and ensure key pages do not show broken layouts or console errors.</small></span></label>
+      </section>
+
+      <section class="audit-section" data-category="Structured data">
+        <div class="section-head"><span class="section-number">07</span><div><h2>Structured data</h2><p>Use markup that accurately describes visible page content.</p></div></div>
+        <label class="check-item"><input type="checkbox"><span><strong>Validate relevant structured data</strong><small>Test supported schema types and correct syntax errors.</small></span></label>
+        <label class="check-item"><input type="checkbox"><span><strong>Keep markup consistent with visible content</strong><small>Do not mark up information that users cannot find on the page.</small></span></label>
+      </section>
+
+      <section class="audit-section" data-category="Analytics and monitoring">
+        <div class="section-head"><span class="section-number">08</span><div><h2>Analytics &amp; monitoring</h2><p>Measure meaningful outcomes and revisit important issues.</p></div></div>
+        <label class="check-item"><input type="checkbox"><span><strong>Verify analytics and conversion tracking</strong><small>Confirm important forms, calls, purchases, or leads are measured appropriately.</small></span></label>
+        <label class="check-item"><input type="checkbox"><span><strong>Review search performance trends</strong><small>Monitor clicks, impressions, queries, and important landing pages over time.</small></span></label>
+        <label class="check-item"><input type="checkbox"><span><strong>Prioritize findings and assign follow-up</strong><small>Record evidence, impact, owner, and next action for each issue.</small></span></label>
+      </section>
+    </div>
+
+    <section class="resource-box">
+      <h2>Related resources</h2>
+      <p>Explore these resources for website and off-page SEO workflows.</p>
+      <ul>
+        <li><a href="https://www.webhostpune.com/" target="_blank" rel="noopener noreferrer">WEB HOST PUNE — website and SEO services</a></li>
+        <li><a href="https://tools.webhostpune.com/" target="_blank" rel="noopener noreferrer">Backlink Analysis Tool — verify existing backlink URLs</a></li>
+        <li><a href="https://ajit360view.com/" target="_blank" rel="noopener noreferrer">Ajit360View — 360° virtual tours</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner"><span>SEO Audit Checklist · Educational resource</span><a href="https://www.webhostpune.com/" target="_blank" rel="noopener noreferrer">Maintained by WEB HOST PUNE ↗</a></div>
+  </footer>
+
+  <script>
+    const boxes = Array.from(document.querySelectorAll('.check-item input[type="checkbox"]'));
+    const progressText = document.querySelector('#progress-text');
+    const progressPercent = document.querySelector('#progress-percent');
+    const progressBar = document.querySelector('#progress-bar');
+    const storageKey = 'webhostpune-seo-audit-checklist-v1';
+
+    function updateProgress() {
+      const done = boxes.filter(box => box.checked).length;
+      const percent = Math.round((done / boxes.length) * 100);
+      progressText.textContent = `${done} of ${boxes.length} checks complete`;
+      progressPercent.textContent = `${percent}%`;
+      progressBar.style.width = `${percent}%`;
+    }
+
+    try {
+      const saved = JSON.parse(localStorage.getItem(storageKey) || '[]');
+      boxes.forEach((box, index) => { box.checked = Boolean(saved[index]); });
+    } catch (_) { /* Checklist remains usable if browser storage is unavailable. */ }
+
+    boxes.forEach(box => box.addEventListener('change', () => {
+      try {
+        localStorage.setItem(storageKey, JSON.stringify(boxes.map(item => item.checked)));
+      } catch (_) { /* Saving progress is optional. */ }
+      box.closest('.check-item').classList.toggle('is-checked', box.checked);
+      updateProgress();
+    }));
+
+    boxes.forEach(box => box.closest('.check-item').classList.toggle('is-checked', box.checked));
+    updateProgress();
+
+    document.querySelector('#print-button').addEventListener('click', () => window.print());
+    document.querySelector('#reset-button').addEventListener('click', () => {
+      if (!window.confirm('Clear all checked items in this browser?')) return;
+      boxes.forEach(box => {
+        box.checked = false;
+        box.closest('.check-item').classList.remove('is-checked');
+      });
+      try { localStorage.removeItem(storageKey); } catch (_) {}
+      updateProgress();
+    });
+  </script>
+</body>
+</html>
